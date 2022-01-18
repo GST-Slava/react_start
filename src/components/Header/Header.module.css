@@ -1,0 +1,8 @@
+.header {
+    grid-area: h;
+    background-image: url("https://graphicriver.img.customer.envatousercontent.com/files/61610209/Carb_fon_sote-04_590.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=8d6aac712b83aa830c83e4d91ca90899");
+}
+
+.header img {
+    width: 95px;
+}
