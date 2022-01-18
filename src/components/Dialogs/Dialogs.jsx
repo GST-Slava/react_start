@@ -2,14 +2,14 @@ import React from "react";
 import s from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogsItem";
 import Message from "./Message/Message";
-import {sendMessageCreator, updateNewMessageBodyCreator} from "../../redux/dialogs-reduser";
+import { sendMessageCreator, updateNewMessageBodyCreator } from "../../redux/dialogs-reduser";
 
 const Dialogs = (props) => {
 
     let state = props.store.getState().dialogsPage;
 
-    let dialogsElements = state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>);
-    let messagesElements = state.messages.map(m => <Message message={m.message}/>);
+    let dialogsElements = state.dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
+    let messagesElements = state.messages.map(m => <Message message={m.message} />);
     let newMessageBody = state.newMessageBody;
 
     let onSendMessageClick = () => {
@@ -32,8 +32,8 @@ const Dialogs = (props) => {
 
             <div>
                 <textarea value={newMessageBody}
-                          onChange={onNewMessageChange}
-                          placeholder='Enter you message'></textarea>
+                    onChange={onNewMessageChange}
+                    placeholder='Enter you message'></textarea>
             </div>
 
             <div>
